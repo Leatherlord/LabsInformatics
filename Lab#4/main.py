@@ -1,9 +1,11 @@
+import ast
+
 f = open("dataIn.json", "r", encoding="utf-8")
 jsonData = f.read()
 null = None
 true = True
 false = False
-d = eval(jsonData)
+d = ast.literal_eval(jsonData)
 f.close()
 f = open("dataOut.yaml", "w", encoding="utf-8")
 for key in d.keys():

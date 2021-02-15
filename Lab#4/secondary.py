@@ -9,4 +9,3 @@ yamlData = yaml.dump(pyDict, allow_unicode=True)
 f = open("dataOut.yaml", "w", encoding="utf-8")
 f.write(yamlData)
 f.close()
-
