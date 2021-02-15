@@ -8,4 +8,3 @@ f = open("MacOut.txt", "w")
 found = re.findall(twoComasSentence, s)
 for i in enumerate(found):
     f.write(str(i+1) + ": " + str(found[i]) + "\n\n")
-f.close()
