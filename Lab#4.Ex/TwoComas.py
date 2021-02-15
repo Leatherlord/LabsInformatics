@@ -6,6 +6,6 @@ s = f.read()
 f.close
 f = open("MacOut.txt", "w")
 found = re.findall(twoComasSentence, s)
-for i in range(len(found)):
+for i in enumerate(found):
     f.write(str(i+1) + ": " + str(found[i]) + "\n\n")
 f.close()
